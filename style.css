@@ -633,16 +633,16 @@ header{
 
 #contact{
     background: rgb(15, 0, 0);
-    padding: 100px 0;
+    padding: 120px 0;
 }
 .contact-content{
      display: grid;
      grid-template-columns: repeat(2,1fr);
-     gap: 50px;
-}
-
-.contact-description{
+     gap: 80px;
      color: white;
+}
+.contact-description{
+    margin-top: 50px;
 }
 .contact-description h3{
     font-weight: 500;
@@ -658,21 +658,129 @@ header{
      line-height: 32px;
 }
 
+.contact-details{
+    margin: 50px 0;
+}
 
+.contact-details .row{
+    margin-bottom: 30px;
+}
+.contact-details .row h2{
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.contact-details .row .details{
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     margin-bottom: 10px;
+}
+.contact-details p{
+    font-size: 17px
+}
+.contact-details span{
+    font-size: 25px;
+    display: flex;
+}
+.contact-column:nth-child(2){
+     display: flex;
+     align-items: flex-end;
+}
+.contact-column .form-section{
+     width: 100%
+}
+.form-row.split{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.form-row{
+     margin-bottom: 20px;
+}
+.form-row label{
+     display: flex;
+     margin-bottom: 5px;
+}
+.form-row .form-control{
+     width: 100%;
+     height: 55px;
+     border-radius: 5px;
+     background: transparent;
+     border: 2px solid rgba(251, 251, 251, 0.604);
+     color: white;
+     font-family: 'Kumbh Sans', sans-serif;
+     font-size: 16px;
+     padding-left: 2%;;
+}
+.form-row textarea{
+     width: 100%;
+     border-radius: 5px;
+     background: transparent;
+     border: 2px solid rgba(251, 251, 251, 0.604);
+     color: white;
+     font-family: 'Kumbh Sans', sans-serif;
+     padding: 2%;
+     font-size: 16px;
+     height: 150px;
+}
 
+.form-btn button{
+    width: 200px;
+    height: 55px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    background: var(--main-color);
+    color: white;
+}
 
+.contact-column .social-links ul{
+     display: flex;     
+     gap: 30px;
+}
+.social-links ul li a{
+     width: 40px;
+     height: 40px;
+     transition: all 0.5s ease;
+     display: flex;
+     ;
+}
+.social-links ul li a:hover{
+     transform: scale(1.1);
+}
+.social-links ul li a img{
+     filter: invert(100%);
+     width: 50%;
+     height: 50%;
+}
 
+#copyright{
+     padding: 40px 0;
+     background:rgb(9, 2, 2);
+}
 
+.copyright-content{
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+}
+.copyright-content p{
+    font-size: 14px;
+    font-weight: 300;
+}
 
-
-
-
-
-
-
-
-
-
+.copyright-content::before{
+    width: 100%;
+    content: "";
+    height: 1px;
+    background: #FFFFFF4D;
+    display: block;
+    position: absolute;
+    top: -30px;
+}
 /*small keyframe kidogo */
 @keyframes justpopkidogo{
       0%{
