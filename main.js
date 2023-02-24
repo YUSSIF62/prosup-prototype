@@ -108,4 +108,12 @@ $(function(){
          autoplaySpeed: 3000,
          pauseOnHover: false
      })
+
+     var $page = $('html, body');
+	 $('a[href*="#"]').click(function() {
+		     $page.animate({
+     				scrollTop: $($.attr(this, 'href')).offset().top-10
+			}, 700);
+    		return false;	
+     });
 })
