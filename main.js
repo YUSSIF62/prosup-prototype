@@ -97,7 +97,6 @@ mobileCloseTrigger.addEventListener("click", () =>{
 
 
 
-
 // Slider Implentation
 $(function(){
      $(".backgrounds").slick({
