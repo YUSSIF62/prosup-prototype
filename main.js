@@ -82,20 +82,32 @@ mobileCloseTrigger.addEventListener("click", () =>{
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Implementing portfolio image modals
+const modalContainer = document.querySelector("#portfolio-modal")
+const modalBox = document.querySelector(".portfolio-image")
+const  imageArr = document.querySelectorAll(".portfolio-moja img")
+const closeBtn = document.querySelector(".modal-close-btn")
+for(let i = 0; i < imageArr.length; i++){
+      imageArr[i].addEventListener("click", ()=>{
+            modalContainer.style.display = "flex"
+            let image = document.createElement("img")
+            image.src = imageArr[i].src
+            modalBox.append(image)
+      })
+}
+closeBtn.addEventListener("click", ()=>{
+      modalContainer.style.display = "none"
+      let image = modalBox.querySelector("img")
+      modalBox.removeChild(image)
+})
+//outside click
+window.addEventListener("click", (e)=>{
+       if(e.target === modalContainer){
+            modalContainer.style.display = "none"
+            let image = modalBox.querySelector("img")
+            modalBox.removeChild(image)
+       }
+})
 
 // Slider Implentation
 $(function(){
